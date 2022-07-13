@@ -17,10 +17,10 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="cars: ${cars}">
-            <td th:text="${cars.getBrand()}"></td>
-            <td th:text="${cars.getModel()}"></td>
-            <td th:text="${cars.getSerialNumber()}"></td>
+        <tr th:each="car: ${cars}">
+            <td th:text="${car.getBrand()}"></td>
+            <td th:text="${car.getModel()}"></td>
+            <td th:text="${car.getSerialNumber()}"></td>
         </tr>
         </tbody>
     </table>

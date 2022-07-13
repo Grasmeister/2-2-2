@@ -1,11 +1,13 @@
 package web.Service;
 
+import org.springframework.stereotype.Service;
 import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 public class CarServiceImpl implements CarSrevice{
+
     List<Car> carList = new ArrayList<>();
     @Override
     public List<Car> addCars() {
