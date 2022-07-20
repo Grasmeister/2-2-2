@@ -5,10 +5,12 @@ import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
-@Service
-public class CarServiceImpl implements CarSrevice{
 
-    List<Car> carList = new ArrayList<>();
+@Service
+public class CarServiceImpl implements CarService {
+
+    private List<Car> carList = new ArrayList<>();
+
     @Override
     public List<Car> addCars() {
         carList.add(new Car("Ford1", "Focus", 97856));
@@ -26,7 +28,7 @@ public class CarServiceImpl implements CarSrevice{
         if (count >= carList.size()) {
             return carList;
         }
-        for (int i = 0; i < count; i++){
+        for (int i = 0; i < count; i++) {
             cars.add(carList.get(i));
         }
         return cars;
